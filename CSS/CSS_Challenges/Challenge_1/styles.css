@@ -1,0 +1,87 @@
+body {
+  background: linear-gradient(
+    180deg,
+    #2a1b34,
+    #291a32,
+    #211628,
+    #100a12,
+    #020103,
+    #000000
+  );
+  background-repeat: no-repeat;
+}
+.main {
+  height: 943px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.new-feat-btn {
+
+  cursor: pointer;
+  display: flex;
+  color: white;
+  padding: 8px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #3d2f558a;
+  border-radius: 100px;
+  border: 1px solid #3f3068;
+  font-size: 20px;
+}
+.new-feat-btn span {
+  padding: 10px;
+  border-radius: 40px;
+  margin-left: 5px;
+  background-color: #59457a8a;
+  border: 1px solid #3f3068;
+}
+.heading {
+  margin-top: 70px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 90px;
+  margin-bottom: 55px;
+  
+}
+.heading span{
+
+}
+.subheading {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+.get-started-btn {
+  cursor: pointer;
+  display: flex;
+  padding: 17px;
+ 
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 100px;
+  background: linear-gradient(150deg, #2873ff, #2f69f0, #335ee1, #3554d3, #364bc4, #3641b6); /* made at https://learnui.design/tools/gradient-generator.html */
+  border: 1px solid #3f3068;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
