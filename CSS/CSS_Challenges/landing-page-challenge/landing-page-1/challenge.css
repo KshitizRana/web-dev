@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-image: url(./assets/chaigym.png)/;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+  
+}
+.hero-img{
+  width:100%;
+  position: absolute;
+  z-index: -10;
+  /* opacity: 0.8; */
+  height: 100vh;
+  filter: brightness(0.6);
+}
+
+.navbar {
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2,500px);
+  justify-content:space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #333333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.logo-text{
+  font-size: 25px;
+  font-weight: bold;
+}
+.nav-links{
+
+  
+}
+.nav-links a {
+
+  padding: 28px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav-links a:hover {
+
+}
+
+
+.hero {
+
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  top:130px;
+}
+
+.hero-content h1 {
+  color: #fff !important;
+  font-weight: 900;
+  font-size: 60px;
+  padding: 15px;
+  
+}
+
+.hero-content p {
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cta-button {
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgb(255, 123, 0);
+  font-size: larger;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+
+  
+  box-shadow: 8px 8px 20px -6px rgb(226, 128, 17,1);
+  cursor: pointer;
+}
+
+
+.features {
+  position: relative;
+  top: 80px;
+  width: 95%;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-gap: 300px;
+  padding: 50px;
+  /* background-color: #3f3e3e; */
+  backdrop-filter: blur(1.5rem);
+  border-radius: 20px;
+  
+}
+
+.feature {
+  border: 2px solid rgb(255, 94, 0);
+  border-radius: 20px;
+  width: 350px;
+  padding: 50px;
+  color: #fff;
+  font-size: larger;
+  box-shadow: 8px 8px 20px -6px rgb(226, 128, 17,1);
+  
+}
+.feature h3 {
+  color: rgb(255, 94, 0);
+}
+
+.feature p {
+
+}

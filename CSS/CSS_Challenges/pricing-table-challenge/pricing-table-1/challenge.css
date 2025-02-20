@@ -1,0 +1,128 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  background-color: #f0eeee;
+}
+
+.container {
+}
+
+h1 {
+  /* Add your styles here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  color: #000;
+}
+.pricing-heading {
+  /* Add your styles here */
+}
+
+.pricing-container {
+  /* Add your styles here */
+
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  border: 1px solid;
+  padding: 40px;
+  width: 320px;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 20px;
+  color: #494848;
+  box-shadow: 8px 8px 20px -7px rgb(48, 46, 43);
+  cursor: pointer;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+  box-shadow: 8px 8px 17px -7px rgba(238,155,47,1);
+  border: 2px solid #ee9b2f;
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ee9b2f;
+  color: #8b8a8a;
+  box-shadow: 8px 8px 17px -7px rgba(238,155,47,1);
+}
+
+.popular-badge {
+  /* Add your styles here */
+  position: relative;
+  top: -66px;
+  left: 18.4%;
+  border: none;
+  border-radius: 40px;
+  width: 150px;
+  background-color: #ee9b2f;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.price {
+  /* Add your styles here */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 25px;
+  color: #494848;
+}
+
+.period {
+  /* Add your styles here */
+}
+
+.features {
+  /* Add your styles here */
+}
+
+.features li {
+  /* Add your styles here */
+}
+
+.subscribe-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f3941893;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-weight: bolder; */
+  font-size: large;
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  background: linear-gradient(150deg, #d7a553, #dca34a, #e1a142, #e79f39, #ed9c30, #f39926, #f9961b, #ff920c);
+  box-shadow: 8px 8px 17px -7px rgba(238,155,47,1);
+}
