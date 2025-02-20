@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4e4d4d;
+}
+
+main {
+  display: flex;
+  background-color: #4e4d4d;
+}
+
+.header {
+  background-color: #1b1b1b;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50vw;
+  height: 55vh;
+  position: relative;
+}
+
+#name-taker {
+  height: 50px;
+  margin-bottom: 25px;
+  resize: none;
+  overflow: hidden;
+}
+
+.review-text {
+  width: 350px !important;
+  height: 250px;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  width: 50vw;
+  height: 100vh;
+}
+
+#empty span {
+  font-size: 30px;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 2rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  width: 70%;
+  padding: 25px;
+  /* text-align: center; */
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  background: #666666;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1),
+    1px 1px 27px rgba(255, 255, 255, 0.6);
+}
+
+p .name-str {
+  font-size: 16px;
+  text-align: center;
+}
+
+p:hover {
+  transform: scale(1.115);
+  transition: 0.25s all ease-out;
+}
+
+.button {
+  position: relative;
+  border: none;
+  margin-top: 20px;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.button .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    to left,
+    hsl(217, 33%, 16%) 0%,
+    hsl(217, 33%, 32%) 8%,
+    hsl(217, 33%, 32%) 92%,
+    hsl(217, 33%, 16%) 100%
+  );
+}
+
+.button .front {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-size: 1.25rem;
+  color: white;
+  background: hsl(217, 33%, 17%);
+  border-radius: 8px;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button .front span {
+  user-select: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.form_details {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+.input {
+  width: 555px;
+  height: 250px;
+  resize: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  color: #fff;
+  outline: none;
+  transition: 0.35s;
+  padding: 17px 17px;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 1),
+    1px 1px 27px rgba(255, 255, 255, 0.6);
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus.input::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .reviews,
+  #testimonials {
+    width: 100%;
+    height: auto;
+  }
+
+  .input {
+    width: 90%;
+    height: 200px;
+  }
+
+  .review-text {
+    width: 90% !important;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews,
+  #testimonials {
+    width: 100%;
+    height: auto;
+  }
+
+  .form_details {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .input {
+    width: 80%;
+    height: 180px;
+  }
+
+  .review-text {
+    width: 80% !important;
+    height: 180px;
+  }
+
+  p {
+    width: 85%;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form_details {
+    font-size: 20px;
+  }
+
+  .input {
+    width: 90%;
+    height: 150px;
+    padding: 12px;
+  }
+
+  .review-text {
+    width: 90% !important;
+    height: 150px;
+  }
+
+  .button .front {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  p {
+    width: 90%;
+    padding: 12px;
+    font-size: 13px;
+  }
+}
